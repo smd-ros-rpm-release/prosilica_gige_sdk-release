@@ -1,0 +1,12 @@
+Source: ros-indigo-prosilica-gige-sdk
+Section: misc
+Priority: extra
+Maintainer: Austin Hendrix <namniart@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin
+Homepage: http://www.ros.org/wiki/prosilica_gige_sdk
+Standards-Version: 3.9.2
+
+Package: ros-indigo-prosilica-gige-sdk
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, 
+Description: AVT GigE SDK version 1.26 for ROS
