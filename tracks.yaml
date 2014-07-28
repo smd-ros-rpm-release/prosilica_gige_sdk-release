@@ -28,6 +28,8 @@ tracks:
     - git-bloom-generate -y rosrelease :{ros_distro} --source upstream -i :{release_inc}
     - git-bloom-generate -y rosdebian --prefix release/:{ros_distro} :{ros_distro}
       -i :{release_inc}
+    - git-bloom-generate -y rosrpm --prefix release/:{ros_distro} :{ros_distro} -i
+      :{release_inc}
     devel_branch: hydro-devel
     last_version: 1.26.2
     name: upstream
@@ -35,7 +37,7 @@ tracks:
     release_inc: '0'
     release_repo_url: git@github.com:ros-drivers-gbp/prosilica_gige_sdk-release.git
     release_tag: :{version}
-    ros_distro: hydro
+    ros_distro: indigo
     vcs_type: git
     vcs_uri: https://github.com/ros-drivers/prosilica_gige_sdk.git
     version: :{auto}
